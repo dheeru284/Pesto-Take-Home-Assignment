@@ -1,0 +1,12 @@
+data_sources:
+  ad_impressions: "path/to/ad_impressions/"
+  clicks_conversions: "path/to/clicks_conversions/"
+  bid_requests: "path/to/bid_requests/"
+
+storage:
+  database_url: "postgresql://username:password@localhost:5432/advertisex"
+  s3_bucket: "advertisex-data"
+
+monitoring:
+  error_log: "logs/error.log"
+  alert_email: "alerts@advertisex.com"

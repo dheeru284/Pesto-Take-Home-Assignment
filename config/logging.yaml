@@ -1,0 +1,19 @@
+version: 1
+formatters:
+  detailed:
+    format: '%(asctime)s %(name)-15s %(levelname)-8s %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: detailed
+    level: INFO
+  file:
+    class: logging.FileHandler
+    filename: logs/error.log
+    formatter: detailed
+    level: ERROR
+loggers:
+  advertisex:
+    level: INFO
+    handlers: [console, file]
+    propagate: yes

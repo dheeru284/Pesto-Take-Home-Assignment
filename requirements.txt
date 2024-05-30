@@ -1,0 +1,7 @@
+pandas
+pyyaml
+fastavro
+sqlalchemy
+psycopg2
+boto3
+watchdog
